@@ -1,13 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <title>Formulários Enviados - TechFuture</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: auto;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #666;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            min-height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>Formulário enviado com sucesso!</h2>
+    <h2>Formulários Enviados - TechFuture</h2>
+    <p>Esta página mostra os formulários enviados por mim, Perônimo Suanches Catarino, para a empresa fictícia de
+        tecnologia <strong>TechFuture</strong>.</p>
 
-<p>Obrigato por estar interessado em nossa empresa!</p>
-<p>Seu formulário será analisado e você será chamado caso seja aceito no cargo</p>
+    <header>
+        <h2>TechFuture - Empresa de Inovação Tecnológica</h2>
+    </header>
 
-<p><strong>Nota:</strong> esse processo pode demorar até 1 ano</p>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Informações Pessoais</a></li>
+                <li><a href="#">Motivação</a></li>
+                <li><a href="#">Sobre a Empresa</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Formulários Enviados</h1>
+            <p><strong>Nome:</strong> Perônimo Suanches Catarino</p>
+            <p><strong>Idade:</strong> 18 anos</p>
+            <p><strong>Data de Nascimento:</strong> 05/12/2006</p>
+            <p><strong>Colégio:</strong> Colégio Estadual do Campo Tunho</p>
+            <p><strong>Objetivo:</strong> Trabalhar como programador para empresas estrangeiras e desenvolver tecnologias inovadoras.</p>
+            <br>
+            <h2>Motivação para Enviar os Formulários</h2>
+            <p>A TechFuture é uma empresa que me inspira devido à sua atuação no mercado internacional de tecnologia. 
+                Eu acredito que a experiência de trabalhar em projetos globais e o ambiente de inovação dessa empresa são ideais para meu desenvolvimento pessoal e profissional.</p>
+            <br>
+            <h2>Sobre a Empresa</h2>
+            <p><strong>Nome:</strong> TechFuture</p>
+            <p><strong>Área de Atuação:</strong> Desenvolvimento de software e soluções tecnológicas</p>
+            <p><strong>Visão:</strong> Transformar o mundo por meio da inovação tecnológica.</p>
+            <p><strong>Missão:</strong> Criar soluções que conectam pessoas e empresas globalmente.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Obrigado por visitar esta página! Para mais informações, entre em contato com a equipe TechFuture.</p>
+    </footer>
 
 </body>
+
 </html>
